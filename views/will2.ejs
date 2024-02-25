@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <style>
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+    </style>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+    <nav class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top" style="text-transform: none;">RecoverRing — William Kerr</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"></a></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                    <li class="nav-item mx-0 mx-lg-1"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead">
+        <div class="container img-fluid d-block mx-auto mb-5">
+            <h1>My Progress</h1>
+            <hr class="star-light" style="margin-bottom: -14px;">
+            
+            <!--<img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">-->
+            
+            <div class="progress mx-auto" data-value='20' id='mainPrgress' style="position:relative">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="willmonthlyLeft"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="willmonthlyRight"></span>
+                  </span>
+                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                    <!--<div class="h2 font-weight-bold" ><span id='amithtxt'>30</span><sup class="small">%</sup></div>-->
+                  </div>
+                  
+                  <div class="progress mx-auto" data-value='40' id='mainPrgress' style="transform:scale(0.75);position:absolute">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="willweeklyLeft" style="border-color: coral;border-width:15px;"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="willweeklyRight" style="border-color: coral;border-width:15px"></span>
+                  </span>
+                    </div>
+                    
+                    <div class="progress mx-auto" data-value='60' id='mainPrgress' style="transform:scale(0.50);position:absolute">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="willdailyLeft" style="border-width:20px"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="willdailyRight" style="border-width:20px"></span>
+                  </span>
+                    </div>
+                </div>
+            
+            
+            
+            
+            <h2 class="font-weight-light mb-0" style="margin-top: 23px;">🔥Drug free for 22 days! 🔥</h2>
+        </div>
+        <!--<div class="container img-fluid d-block mx-auto mb-5" >-->
+            
+            
+        <!--<div class="progress mx-auto" data-value='30' id='mainPrgress'>-->
+        <!--  <span class="progress-left">-->
+        <!--        <span class="progress-bar border-danger" id="mainRingLeft"></span>-->
+        <!--  </span>-->
+        <!--  <span class="progress-right">-->
+        <!--        <span class="progress-bar border-danger" id="mainRingRight"></span>-->
+        <!--  </span>-->
+        <!--  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">-->
+        <!--    <div class="h2 font-weight-bold" ><span id='mainProgressTxt'>30</span><sup class="small">%</sup></div>-->
+        <!--  </div>-->
+        <!--</div>-->
+        
+        
+        
+            <!--<img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">-->
+            
+        <!--    <h1 class="mt-5">My Progress</h1>-->
+        <!--    <hr class="star-light">-->
+        <!--    <h2 class="font-weight-light mb-0">🔥Drug free for 22 days! 🔥</h2>-->
+        <!--</div>-->
+        <div class="row" style="width: 100%;">
+            <div class="col" style="margin-top: 49px;">
+                <h1 style="font-size: 50px; margin-bottom: 20px;">Tommy's Progress</h1>
+                
+        <div class="progress mx-auto" data-value='40' id='mainPrgress' style="position:relative">
+          <span class="progress-left">
+                <span class="progress-bar border-danger" id="tommymonthlyLeft"></span>
+          </span>
+          <span class="progress-right">
+                <span class="progress-bar border-danger" id="tommymonthlyRight"></span>
+          </span>
+          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+            <!--<div class="h2 font-weight-bold" ><span id='tommytxt'>30</span><sup class="small">%</sup></div>-->
+          </div>
+          
+          <div class="progress mx-auto" data-value='60' id='mainPrgress' style="transform:scale(0.75);position:absolute">
+          <span class="progress-left">
+                <span class="progress-bar border-danger" id="tommyweeklyLeft" style="border-color: coral;border-width:15px;"></span>
+          </span>
+          <span class="progress-right">
+                <span class="progress-bar border-danger" id="tommyweeklyRight" style="border-color: coral;border-width:15px"></span>
+          </span>
+            </div>
+            
+            <div class="progress mx-auto" data-value='20' id='mainPrgress' style="transform:scale(0.50);position:absolute">
+          <span class="progress-left">
+                <span class="progress-bar border-danger" id="tommydailyLeft" style="border-width:20px"></span>
+          </span>
+          <span class="progress-right">
+                <span class="progress-bar border-danger" id="tommydailyRight" style="border-width:20px"></span>
+          </span>
+            </div>
+        </div>
+                
+                
+                    <!--<img src="assets/img/profile.png" style="margin-right: 12px;margin-left: 12px;">-->
+                <h2 class="font-weight-light mb-0" style="margin-top: 18px;">😲 TikTok free for 134 days! 😲</h2>
+            </div>
+            <div class="col" style="margin-top: 49px;">
+                <h1 style="font-size: 50px; margin-bottom: 20px;" >Amith's Progress</h1>
+                
+                <div class="progress mx-auto" data-value='20' id='mainPrgress' style="position:relative">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="amithmonthlyLeft"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="amithmonthlyRight"></span>
+                  </span>
+                  <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                    <!--<div class="h2 font-weight-bold" ><span id='willtxt'>30</span><sup class="small">%</sup></div>-->
+                  </div>
+                  
+                  <div class="progress mx-auto" data-value='40' id='mainPrgress' style="transform:scale(0.75);position:absolute">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="amithweeklyLeft" style="border-color: coral;border-width:15px;"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="amithweeklyRight" style="border-color: coral;border-width:15px"></span>
+                  </span>
+                    </div>
+                    
+                    <div class="progress mx-auto" data-value='60' id='mainPrgress' style="transform:scale(0.50);position:absolute">
+                  <span class="progress-left">
+                        <span class="progress-bar border-danger" id="amithdailyLeft" style="border-width:20px"></span>
+                  </span>
+                  <span class="progress-right">
+                        <span class="progress-bar border-danger" id="amithdailyRight" style="border-width:20px"></span>
+                  </span>
+                    </div>
+                </div>
+            
+                <!--<img src="assets/img/profile.png" style="margin-right: 12px;margin-left: 12px;">-->
+                <h2 class="font-weight-light mb-0" style="margin-top: 18px;">👍Gambling free for 2 days! 👍</h2>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">Your Checklist</h2>
+            <hr class="star-dark mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-4 d-flex d-xl-flex flex-column justify-content-center align-items-xl-start" style="margin: 12px;width: 90%;background: #6368e8;padding-top: 17px;border-radius: 30px;padding-left: 18px;padding-bottom: 19px;">
+                    <h1>Daily</h1>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" style="width: 20px;height: 20px;" onclick="updateRing('daily', 10)"><label class="form-check-label" for="formCheck-1" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;"><span style="background-color: transparent;">Cultivate gratitude for progress made each day.</span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6" style="width: 20px;height: 20px;" onclick="updateRing('daily', 10)"><label class="form-check-label" for="formCheck-6" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;"><span style="background-color: transparent;">Journal thoughts and emotions related to addiction.</span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7" style="width: 20px;height: 20px;" onclick="updateRing('daily', 10)"><label class="form-check-label" for="formCheck-7" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;"><span style="background-color: transparent;">Reach out to the support network for encouragement.</span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5" style="width: 20px;height: 20px;" onclick="updateRing('daily', 10)"><label class="form-check-label" for="formCheck-8" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Practice mindfulness and stress management techniques.</label></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex d-xl-flex flex-column justify-content-center align-items-xl-start" style="margin: 12px;width: 90%;background: #67e23c;padding-top: 17px;border-radius: 30px;padding-left: 18px;padding-bottom: 19px;">
+                    <h1>Weekly</h1>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2" style="width: 20px;height: 20px;" onclick="updateRing('weekly', 15)"><label class="form-check-label" for="formCheck-2" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Connect with a mentor or sponsor regularly.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3" style="width: 20px;height: 20px;" onclick="updateRing('weekly', 15)"><label class="form-check-label" for="formCheck-3" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Reinforce positive habits developed in therapy.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 20px;height: 20px;" onclick="updateRing('weekly', 15)"><label class="form-check-label" for="formCheck-4" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Maintain consistent adherence to prescribed medication.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5" style="width: 20px;height: 20px;" onclick="updateRing('weekly', 15)"><label class="form-check-label" for="formCheck-5" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Actively participate in support group sessions.</label></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex d-xl-flex flex-column justify-content-center align-items-xl-start" style="margin: 12px;width: 90%;background: #4a8fd0;padding-top: 17px;border-radius: 30px;padding-left: 18px;padding-bottom: 19px;">
+                    <h1>Monthly&nbsp;</h1>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-9" style="width: 20px;height: 20px;" onclick="updateRing('monthly', 20)"><label class="form-check-label" for="formCheck-9" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Assess effectiveness of current strategies.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10" style="width: 20px;height: 20px;" onclick="updateRing('monthly', 20)"><label class="form-check-label" for="formCheck-10" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Reflect on personal triggers and coping mechanisms.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11" style="width: 20px;height: 20px;" onclick="updateRing('monthly', 20)"><label class="form-check-label" for="formCheck-11" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Explore additional therapeutic interventions.</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12" style="width: 20px;height: 20px;" onclick="updateRing('monthly', 20)"><label class="form-check-label" for="formCheck-12" style="color: var(--bs-emphasis-color);font-size: 19px;margin-left: 10px;">Assess effectiveness of current strategies.</label></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-1" class="portfolio" style="background: #18bc9c;margin-bottom: -99px;">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">About Your Plan</h2>
+            <hr class="star-dark mb-5" style="background: #18bc9c;">
+        </div>
+        <div class="row d-flex justify-content-center align-items-center" style="padding: 22px;margin-top: -99px;width: 100%;">
+            <div class="col" style="width: 82%;padding-left: 30px; max-width: 500px">
+                <p style="width: 90%;"><br><span style="color: rgb(0, 0, 0); background-color: transparent;">In the monthly goals, focus on strengthening the foundations laid in support groups and medication. Use this time to assess the effectiveness of current strategies, explore additional therapeutic approaches, and reflect on personal triggers. Weekly goals should involve active participation in support groups, maintaining consistency in medication, and reinforcing positive habits. Daily tasks will center around building resilience through mindfulness, connecting with the support network, and staying committed to the recovery journey. Go in the order of daily first, then weekly, then monthly.</span><br><br></p>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer">
+        <div class="container">
+            <div class="row d-lg-flex justify-content-lg-center">
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">About RecoverRing</h4>
+                    <p class="lead mb-0"><span>AI powered, socially supported addiction recovery. We're here for you &lt;3</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright ©&nbsp;RecoverRing 2024</small></div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'> </script>
+    <script>
+        const socket = new WebSocket('wss://recovering.sites.tjhsst.edu');
+        socket.addEventListener('open', function (event) {
+            console.log('Successful web socket connection!');
+        });
+        
+        // socket.addEventListener('message', async function (message) {
+        //     console.log(message.data);
+        //     msg = message.data.split(':')
+        //     value = msg[1]
+        //     if (msg[0] == 'will'){
+                
+        //         var left = document.getElementById("willLeft");
+        //         var right = document.getElementById("willRight");
+        //         if (value > 0) {
+        //           if (value <= 50) {
+        //             right.style.transform = 'rotate(' + percentageToDegrees(value) + 'deg)'
+        //           } else {
+        //             right.style.transform = 'rotate(180deg)'
+        //             left.style.transform = 'rotate(' + percentageToDegrees(value - 50) + 'deg)'
+        //           }
+        //         }
+        //     } 
+        //     else if (msg[0] == 'tommy'){
+        //         var left = document.getElementById("tommyLeft");
+        //         var right = document.getElementById("tommyRight");
+        //         if (value > 0) {
+        //           if (value <= 50) {
+        //             right.style.transform = 'rotate(' + percentageToDegrees(value) + 'deg)'
+        //           } else {
+        //             right.style.transform = 'rotate(180deg)'
+        //             left.style.transform = 'rotate(' + percentageToDegrees(value - 50) + 'deg)'
+        //           }
+        //         }
+        //     }
+                
+        // })
+        
+        
+        socket.addEventListener('message', async function (message) {
+            console.log(message.data);
+            msg = message.data.split(':')
+            person = msg[0]
+            period = msg[1]
+            value = msg[2]
+            
+            // document.getElementById(person+'txt').innerHTML = periods[period]
+            // mainProgress = document.getElementById("mainPrgress");
+            var left = document.getElementById(person + period + 'Left');
+            var right = document.getElementById(person + period + 'Right');
+            
+            
+            // console.log('updating')
+            if (value > 0) {
+              if (value <= 50) {
+                right.style.transform = 'rotate(' + percentageToDegrees(value) + 'deg)'
+              } else {
+                right.style.transform = 'rotate(180deg)'
+                left.style.transform = 'rotate(' + percentageToDegrees(value - 50) + 'deg)'
+              }
+            }
+   
+        })
+        
+        
+
+
+          $(function() {
+
+          $(".progress").each(function() {
+        
+            var value = $(this).attr('data-value');
+            var left = $(this).find('.progress-left .progress-bar');
+            var right = $(this).find('.progress-right .progress-bar');
+        
+            if (value > 0) {
+              if (value <= 50) {
+                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+              } else {
+                right.css('transform', 'rotate(180deg)')
+                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+              }
+            }
+        
+          })
+        
+          function percentageToDegrees(percentage) {
+        
+            return percentage / 100 * 360
+        
+          }
+
+        });
+        
+        var periods = {
+            daily:60, 
+            weekly: 40,
+            monthly: 20
+        }
+        function updateRing(period, amount) {
+            //  console.log('updating')
+            periods[period] = periods[period] + amount 
+            // initialRingVal = initialRingVal + amount
+            socket.send('will' + ":" + period + ":" + periods[period]);
+            console.log('sending' + period +' to ws server' + periods[period])
+         }
+         
+         function percentageToDegrees(percentage) {
+        
+            return percentage / 100 * 360
+        
+          }
+         
+
+    </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+</body>
+
+</html>
